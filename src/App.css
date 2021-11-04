@@ -8,6 +8,8 @@
   background-size: 400%, 400%;
   position: relative;
   animation: change 60s ease-in-out infinite;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes change {
