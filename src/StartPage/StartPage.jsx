@@ -20,8 +20,8 @@ class StartPage extends Component {
         return s;
       }, 1000);
     };
-    const arrD = [style.indicator, style.indicatorleft];
-    let dinamic = change(arrD);
+    const arrD = ["on", "off"];
+    change(arrD);
   }
   render() {
     return (
@@ -30,33 +30,29 @@ class StartPage extends Component {
         <div className={style.radiobutton}>
           <NavLink to="/radio">RadioButton</NavLink>
           <div className={style.list}>
-            <div className={style.cell}>
-              <div className={style.togle}>
-                <i className={this.state.dinamic}></i>
-              </div>
-            </div>
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
           </div>
         </div>
         <div className={style.radio}>
           <NavLink to="/button">Button</NavLink>
           <div className={style.list}>
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
+            <Cell class={this.state.dinamic} />
           </div>
         </div>
       </div>
